@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+a {
+  color: #63a0f1;
+}
+
+body {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+form {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  min-width: 480px;
+  max-width: 70%;
+  height: 85%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form_h2_1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 200%;
+
+  color: #222222;
+}
+
+.form_p_2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+
+  color: #828282;
+}
+label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  color: #828282;
+  display: block;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
+.email label{
+  font-weight: 700;
+} 
+
+
+
+.email input {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.names {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+.names  > .first_name input{
+    width: 50%;
+}
+.names > .last_name input{
+    width: 50%;
+}
+.first_name {
+  width: 50%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.last_name {
+  width: 50%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.first_name label{
+  font-weight: 700;
+}
+.last_name label{
+  font-weight: 700;
+}
+
+.password {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.password input {
+  border-bottom: 1px solid #e0e0e0;
+}
+.password label{
+  font-weight: 700;
+}
+
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+  gap: 1rem;
+  
+}
+.month {
+
+  border-bottom: 1px solid #e0e0e0;
+ 
+
+}
+.day label{
+  display: block;
+}
+.year label{
+  display: block;
+}
+.month label{
+  display: block;
+}
+.day input{
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  background: none;
+}
+.month select{
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  background: none;
+}
+.year input{
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  background-color: white;
+}
+.day {
+
+  border-bottom: 1px solid #e0e0e0;
+ 
+}
+
+.year {
+  border-bottom: 1px solid #e0e0e0;
+  
+}
+
+.my_p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  /* or 24px */
+  margin-top: 2rem;
+
+  color: #828282;
+}
+
+#btn_create {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  background: #2f80ed;
+  border-radius: 9px;
+  padding: 0.2rem 0.7rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+.date_of_birth{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  color: #828282;
+  text-align: left;
+  width: 100%;
+}
+.logo img{
+  width: 110px;
+}
+#body{
+  position: relative;
+}
+.slider img{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 800ms;
+}
+.slider .selected{
+  opacity: 1;
+}
+
+
+form{
+
+  z-index: 1000;
+}
+.logo{
+  z-index: 1000;
+}
+
+@media (max-width: 761px){
+  .logo img{
+    display: none;
+  }
+
+}

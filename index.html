@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/devchallenges.png" />
+
+    <title></title>
+  </head>
+  <body id="body">
+
+
+    <div class="slider">
+      <img src="img/flowerPlant.jpeg" class="selected">
+      <img src="img/fall.jpeg">
+      <img src="img/leaf.jpeg">
+    </div>
+
+    <div class="logo">
+      <img src="img/behold-logo.png" alt="logo" />
+    </div>
+
+    <form>
+      <h2 class="form_h2_1">Create an account</h2>
+
+      <p class="form_p_2">Already have an account? <a href="">Sign in</a></p>
+
+      <div class="email">
+        <label>Email address</label>
+        <input type="email" />
+      </div>
+      <div class="names">
+        <div class="first_name">
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+        <div class="last_name">
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="password">
+        <label>Password</label>
+        <input type="password" />
+      </div>
+      <p class="date_of_birth">Date of birth</p>
+      <div class="date">
+        <div class="month">
+          <label>Month</label>
+          <select >
+            <option selected></option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+        </div>
+        <div class="day">
+          <label>Day</label>
+          <input type="number" />
+        </div>
+        <div class="year">
+          <label>Year</label>
+          <input type="number" min="1900" max="2099" step="1" />
+        </div>
+      </div>
+      <p class="my_p">
+        By clicking Create account, I agree that I have read and accepted the
+        <a>Terms of Use </a>and <a>Privacy Policy.</a>
+      </p>
+      <button id="btn_create">Create account</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
